@@ -1,16 +1,17 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
+import React from "react";
 
-function DisplayTask() {
-  const [Tasks, setTasks] = useState([
-    { id: 1, name: "Make your bed" },
-    { id: 2, name: "Make breakfast" },
-    { id: 3, name: "Do exercise" },
-  ]);
+function DisplayTask({ Tasks, DeleteTask }) {
+  // const [Tasks, setTasks] = useState([
+  //   { id: 1, name: "Make your bed" },
+  //   { id: 2, name: "Make breakfast" },
+  //   { id: 3, name: "Do exercise" },
+  // ]);
 
-  const DeleteTask = (id) => {
-    const newTasks = Tasks.filter((item) => item.id !== id);
-    setTasks(newTasks);
-  };
+  // const DeleteTask = (id) => {
+  //   const newTasks = Tasks.filter((item) => item.id !== id);
+  //   setTasks(newTasks);
+  // };
 
   return (
     <div>

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DisplayTask from "./DisplayTask";
 
 function InputTask() {
   const [Tasks, setTasks] = useState([
@@ -39,7 +40,7 @@ function InputTask() {
         ></input>
         <button type="submit">Add this task</button>
       </form>
-      <div>
+      {/* <div>
         <h2>Your task are listed below:</h2>
         <ul>
           {Tasks.map((task) => (
@@ -49,7 +50,8 @@ function InputTask() {
             </li>
           ))}
         </ul>
-      </div>
+      </div> */}
+      <DisplayTask Tasks={Tasks} DeleteTask={DeleteTask} />
     </div>
   );
 }
