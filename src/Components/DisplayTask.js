@@ -14,7 +14,7 @@ function DisplayTask({ Tasks, DeleteTask }) {
   // };
 
   return (
-    <div>
+    <div className="display">
       <h2>Your task are listed below:</h2>
       <ul>
         {Tasks.map((task) => (

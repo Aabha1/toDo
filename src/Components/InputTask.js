@@ -28,16 +28,18 @@ function InputTask() {
   };
 
   return (
-    <div>
+    <div className="container">
       <form onSubmit={handleSubmit}>
-        <label htmlFor="task">Enter new task : </label>
-        <input
+        <label htmlFor="task">
+          <h2>Enter new task : </h2>
+        </label>
+        <textarea
           type="text"
           id="task"
           name="task"
           value={newTask.name}
           onChange={changeHandler}
-        ></input>
+        ></textarea>
         <button type="submit">Add this task</button>
       </form>
       {/* <div>
