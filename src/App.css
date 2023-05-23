@@ -2,6 +2,9 @@ body {
   background-color: #fefae0;
   color: #d4a373;
   height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 .App {
   text-align: flex;
@@ -30,7 +33,7 @@ li {
 }
 form {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   flex-direction: column;
   width: 35%;
   align-items: flex-start;
@@ -51,6 +54,9 @@ textarea {
   width: 90%;
   border-width: 0.2rem;
   text-align: start;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
 }
 button {
   background-color: #d4a373;
@@ -60,6 +66,10 @@ button {
 textarea:focus {
   background-color: #fefae0;
   outline: none;
+  border-bottom-color: #d4a373;
+  border-right-color: #d4a373;
+  border-top-color: #9c7753;
+  border-left-color: #9c7753;
 }
 .display {
   width: 60%;
