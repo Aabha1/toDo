@@ -3,9 +3,13 @@ import DisplayTask from "./DisplayTask";
 
 function InputTask() {
   const [Tasks, setTasks] = useState([
-    { id: "c", name: "Make your bed" },
+    { id: "c", name: "Make your bed and brush your teeth and shower on time" },
     { id: "b", name: "Make breakfast" },
     { id: "a", name: "Do exercise" },
+    {
+      id: "d",
+      name: "Clean the room, vaccum the hall, and wash the dishes left in the sink",
+    },
   ]);
   const [newTask, setNewTask] = useState({ id: 0, name: "" });
 
